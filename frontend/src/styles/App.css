@@ -1,0 +1,341 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body, .root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+body, .app {
+  background: #f5f5f5;
+}
+
+/* CreateContact */
+
+.close-create-contact {
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  font-size: 0;
+}
+
+.create-contact-form {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.create-contact-details {
+  margin-left: 20px;
+}
+
+
+
+.create-contact-details input {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: inherit;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+}
+
+
+.create-contact-details button {
+  margin-top: 20px;
+  background: #ccc;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: inherit;
+  border: none;
+  outline: 0;
+}
+
+/* ListContacts */
+
+.list-contacts {
+  padding-top: 60px;
+}
+.list-contacts-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #d5d8df;
+  display: flex;
+}
+
+.showing-contacts {
+  text-align: center;
+  margin: 20px 0;
+}
+.showing-contacts button {
+  color: blue;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.contact-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.contact-list-item {
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column
+  
+}
+
+@media (min-width: 600px) {
+  .contact-list-item {
+    margin: 20px;
+    border: 1px solid #d5d8df;
+    border-radius: 4px;
+  }
+}
+
+.header{
+
+  padding:10px;
+  margin: 10px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+.form-container{
+  padding:20px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  margin: 10px;
+
+}
+
+.form-field{
+  padding:5px;
+  margin: 5px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.form-value{
+  margin-left: 15px
+}
+
+.form-label{
+  font-size: 16px;
+  font-weight: bold; 
+}
+
+.form-post-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-post-body{
+  margin-top: 5px;
+  font-size: 16px; 
+}
+
+
+.action-container{
+  padding:10px;
+  margin: 10px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.button-container{
+  padding:10px;
+}
+
+.button{
+  
+  background-color: #008CBA;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.button-form{
+  
+  background-color: #008CBA;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 5px
+}
+
+
+.contact-details {
+  font-size: 20px;
+  padding-left: 20px;
+
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.post-subtitle{
+  padding-left:10px;
+  font-weight: bold
+}
+
+.post-action{
+  margin-left: 100px;
+}
+
+.post-details{
+  
+  font-size: 12px;
+}
+
+.post-list-sub {
+  font-size: 12px;
+  padding-left: 20px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.post-detail-sub {
+  font-size: 12px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.post-subitem{
+  padding-left:15px;
+}
+
+
+.contact-details p {
+  margin: 0;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#categorieslist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+.categories-title{
+  font-weight: bold
+}
+
+.input-wrapper{
+  width:100%;
+}
+
+.input-text{
+  width: 500px;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+}
+
+.comments-title{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.comments-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.comments-list-item {
+  padding: 15px;
+  font-size: 13px;
+  background: white;
+  display: flex;
+  flex-direction: column
+}
+
+.comments-body
+{
+  display: flex;
+  flex-direction: flex-start
+}
+
+
